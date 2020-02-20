@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Users\bhazenstab16\GuitarTuner\.metadata\.plugins\org.eclipse.jdt.core
+4114267351.index
+1811709985.index
+4164268260.index
+1284074322.index

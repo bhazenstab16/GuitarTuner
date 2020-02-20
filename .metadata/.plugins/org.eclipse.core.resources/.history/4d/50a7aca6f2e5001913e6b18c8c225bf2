@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guitartuner.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonE6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="ToggleButton"
+                        android:textOff="E"
+                        android:textOn="E" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/toggleButtonE6"
+                        android:text="ToggleButton" 
+                        android:textOff="A"
+                        android:textOn="A"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/toggleButtonA"
+                        android:text="ToggleButton" 
+                        android:textOff="D"
+                        android:textOn="D"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/toggleButtonD"
+                        android:text="ToggleButton" 
+                        android:textOff="G"
+                        android:textOn="G"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/toggleButtonG"
+                        android:text="ToggleButton" 
+                        android:textOff="B"
+                        android:textOn="B"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/toggleButtonB"
+                        android:text="ToggleButton" 
+                        android:textOff="E"
+                        android:textOn="E"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="24dp"
+                        android:src="@drawable/ic_loop2" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
+
